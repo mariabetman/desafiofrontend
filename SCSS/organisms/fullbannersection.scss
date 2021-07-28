@@ -1,0 +1,32 @@
+.main__section-slide
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 180, 165);
+}
+.tablet
+{
+    border: 1px solid rgb(229, 231, 228);
+    border-radius: 10px;
+    padding: 1em 3em;
+    margin: 96px 0 20px;
+}
+.main__section__img-slide
+{
+    height: 458px;
+    width: 814px;
+    border-radius: 10px;
+}
+.slide__p
+{
+    display: inline-block;
+    width: 814px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    color: white;
+    text-align: left;
+    margin-bottom: 15px;
+}
