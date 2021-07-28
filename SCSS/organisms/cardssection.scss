@@ -1,0 +1,13 @@
+.main__section-grid
+{
+    background-color: rgb(168, 180, 165);
+    display: grid;
+    grid-template-columns: 448px 448px;
+    grid-template-rows: 365px 365px 365px;
+}
+.main__grid-header
+{
+    display: inline-block;
+    padding-top: 100px; 
+    width: 814px;
+}
