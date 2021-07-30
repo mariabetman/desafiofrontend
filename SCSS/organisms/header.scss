@@ -7,7 +7,7 @@
     {
         height: 176px;
         width: 100%;
-        background-color: rgba(217, 95, 105);
+        background-color: $color_pink;
         border: 1px solid transparent;
     }
 
@@ -58,8 +58,8 @@
 
         &__li:hover
         {
-            background-color: rgba(217, 95, 105);
-            color: white;
+            background-color: $color_pink;
+            color: $color_white;
             font-weight: 500;
         }
     }
