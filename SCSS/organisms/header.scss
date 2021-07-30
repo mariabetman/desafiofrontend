@@ -2,12 +2,15 @@ header
 {
     height: 232px;
     width: 100%;
-}
-.header-color
-{
-    height: 162px;
-    background-color: rgba(217, 95, 105);
-    border: 1px solid transparent;
+    
+    &-color 
+    {
+        height: 162px;
+        background-color: rgba(217, 95, 105);
+        border: 1px solid transparent;
+
+        @extend .header__h1
+       }
 }
 .header__img-logo
 {
