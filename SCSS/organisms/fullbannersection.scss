@@ -2,7 +2,9 @@
 {
     display: flex;
     width: 100%;
+    /**background-image: url(../../Imagens/background_decoration.png);**/
     background-color: #373737;
+    background-position: right;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -30,16 +32,18 @@
         opacity: 1;
         border-radius: 50%;
         margin-left: calc((3em - 28px) / 2);
+
+        &::after
+        {
+            content: "";
+            height: 11px;
+            width: 12px;
+            border: 1px solid #FFFFFF;
+            opacity: 1;
+            border-radius: 3px;
+        }
     }
-    &__button::after
-    {
-        content: "";
-        height: 11px;
-        width: 12px;
-        border: 1px solid #FFFFFF;
-        opacity: 1;
-        border-radius: 3px;
-    }
+
     &__img
     {
         height: 458px;
