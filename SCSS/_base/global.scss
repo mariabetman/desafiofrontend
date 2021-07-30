@@ -4,7 +4,7 @@ html, body
 {
     width: 100%;
     height: auto;
-    font-size: 20px;
+    font-size: $default_font_size;
     font-display: fallback;
     background-color: $color_white;
     color: $color_black;

@@ -1,59 +1,62 @@
-header
+.header
 {
     height: 232px;
     width: 100%;
     
     &-color 
     {
-        height: 162px;
+        height: 176px;
+        width: 100%;
         background-color: rgba(217, 95, 105);
         border: 1px solid transparent;
+    }
 
-        @extend .header__h1
-       }
-}
-.header__img-logo
-{
-    display: block;
-    height: 51px;
-    width: 247px;
-    margin: 32.35px auto 14px;
-}
-.header__h1
-{
-    text-transform: lowercase;
-    text-align: center;
-    font-size: 28px;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3.36px;
-    margin-bottom: 29px;
-}
-.header-white
-{
-    height: 56px;
-    width: 100%;
-    background-color: white;
-}
-.header__nav ul
-{
-    display: flex;
-    height: 56px;
-    justify-content: center;
-    align-items: center;
-}
-.header__nav ul li
-{
-    display: flex;
-    align-items: center;
-    height: 56px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 23px;
-    text-transform: lowercase;
-    text-align: center;
-    padding: 0 1em;
-}
-.header__nav ul li:hover
-{
-    background-color: rgba(217, 95, 105);
-    color: white;
+    &__logo
+    {
+        display: block;
+        height: 51px;
+        width: 247px;
+        margin: 32.35px auto 14px;
+    }
+
+    &__tittle
+    {
+        text-transform: lowercase;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 3.36px;
+        margin-bottom: 29px;
+    }
+    &-white
+    {
+        height: 56px;
+        width: 100%;
+        background-color: $color_white;
+    }
+    &__nav__ul
+    {
+        display: flex;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+
+        &__li
+        {
+            display: flex;
+            height: 56px;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            text-transform: lowercase;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        &__li:hover
+        {
+            background-color: rgba(217, 95, 105);
+            color: white;
+        }
+    }
 }
