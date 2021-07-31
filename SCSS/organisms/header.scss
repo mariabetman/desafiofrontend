@@ -1,0 +1,70 @@
+.header
+{
+    height: 232px;
+    width: 100%;
+    
+    &-color 
+    {
+        height: 176px;
+        width: 100%;
+        background-color: $color_pink;
+        border: 1px solid transparent;
+    }
+
+    &__logo
+    {
+        display: block;
+        height: 51px;
+        width: 247px;
+        margin: 32.35px auto 14px;
+    }
+
+    &__tittle
+    {
+        text-transform: lowercase;
+        text-align: center;
+        font-size: 1.4rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+        text-shadow: 0px 3px 6px #00000029;
+        letter-spacing: 3.36px;
+        margin-bottom: 29px;
+    }
+    &-white
+    {
+        height: 56px;
+        width: 100%;
+        background-color: $color_white;
+    }
+    &__nav__ul
+    {
+        display: flex;
+        height: 56px;
+        justify-content: center;
+        align-items: center;
+
+        &__li
+        {
+            display: flex;
+            height: 56px;
+            align-items: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.15rem;
+            font-weight: 200;
+            text-transform: lowercase;
+            text-align: center;
+            padding: 0 1em;
+        }
+
+        &__li:hover
+        {
+            background-color: $color_pink;
+            color: $color_white;
+            font-weight: 500;
+        }
+    }
+}
+.bold
+{
+    font-weight: 400;
+}
