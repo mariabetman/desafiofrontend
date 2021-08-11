@@ -2,13 +2,20 @@
 {
     display: flex;
     width: 100%;
-    /**background-image: url(../../Imagens/background_decoration.png);**/
     background-color: $color_gray;
     background-position: right;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+
+    /**&::before
+    {
+        content: url(../../Imagens/background_decoration.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }**/
 
     &__tablet
     {
@@ -109,7 +116,8 @@
     }
     &__description
     {
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
         width: 814px;
         font-family: 'Montserrat', sans-serif;
         font-size: 1rem;
@@ -117,6 +125,17 @@
         letter-spacing: 0.6px;
         color: $color_white;
         text-align: left;
-        margin-bottom: 60px;
+        margin-bottom: 50px;
+        padding-bottom: 15px;
+
+        &::after
+        {
+            content: "";
+            height: 0;
+            width: 275px;
+            border: 1px solid rgb(2, 27, 26);
+            align-self: center;
+            margin-top: 12.5px;
+        }
     }
 }

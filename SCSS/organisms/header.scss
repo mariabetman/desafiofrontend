@@ -16,6 +16,7 @@
         display: block;
         height: 51px;
         width: 247px;
+        opacity: 0.68;
         margin: 32.35px auto 14px;
     }
 
@@ -30,12 +31,14 @@
         letter-spacing: 3.36px;
         margin-bottom: 29px;
     }
+
     &-white
     {
         height: 56px;
         width: 100%;
         background-color: $color_white;
     }
+
     &__nav__ul
     {
         display: flex;
@@ -51,6 +54,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.15rem;
             font-weight: 200;
+            letter-spacing: 2.3px;
             text-transform: lowercase;
             text-align: center;
             padding: 0 1em;
