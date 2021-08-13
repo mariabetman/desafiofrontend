@@ -14,11 +14,13 @@
         position: relative;
         left: 20.5px;
         font-family: 'Montserrat', sans-serif;
+        letter-spacing: -1.8px;
     }
 
     &__tittle
     {
         display: flex;
+        width: 814px;
         color: $color_white;
         font-size: 60px;
         font-weight: 300;
@@ -47,6 +49,14 @@
         margin-bottom: 150px;
         letter-spacing: 0px;
         align-content: flex-start;
+
+        &__quote
+        {
+            display: inline-block;
+            height: 22px;
+            width: 28px;
+            padding: 6.5px 8px 0 0;
+        }
     }
 }
 
@@ -105,4 +115,10 @@
     {
         margin-bottom: 100px;
     }
+}
+
+.light
+{
+    font-weight: 100;
+    padding-left: 20px;
 }
