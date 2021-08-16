@@ -1,7 +1,23 @@
 .slider
 {
-    display: flex;
     width: 100%;
+
+    &__img
+    {
+        width: 100%;
+    }
+
+    &__description
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 768px)
+{
+.slider
+{
+    display: flex;
     background-color: $color_gray;
     background-position: right;
     flex-direction: column;
@@ -138,4 +154,5 @@
             margin-top: 12.5px;
         }
     }
+}
 }
