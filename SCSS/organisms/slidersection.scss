@@ -1,18 +1,21 @@
 .banner
 {
-    height: 569px;
+    height: 641px;
     width: 100%;
     position: relative;
     background-image: url(../../Imagens/background_sdc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: right;
 
-    &__gradient
+    &::after
     {
-        background: transparent linear-gradient(129deg, #DFA5AA 0%, #A64951 100%) 0% 0% no-repeat padding-box;
-        opacity: 40%;
+        content: "";
+        display: block;
         width: 100%;
-        height: 569px;
+        height: 641px;
+        background: transparent linear-gradient(129deg, #DFA5AA 0%, #A64951 100%) 0% 0% no-repeat padding-box;
+        opacity: 55%;
         position: absolute;
         left: 0;
         top: 0;
@@ -20,9 +23,12 @@
 
     &__position
     {
+        display: inline-block;
         position: absolute;
-        right: 0;
         bottom: 0;
+        right: 2.5px;
+        margin: auto;
+        z-index: 1;
     }
 
     &__text
@@ -30,16 +36,40 @@
         display: inline-block;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
-        font-size: 85px;
+        font-size: 30px;
         color: $color_white;
         letter-spacing: 0;
         padding: 0 40px 25px 0;
-        opacity: 90%;
 
         &::after
         {
             content: "_";
             color: $color_pink;
+        }
+    }
+}
+
+@media (min-width: 1010px)
+{
+    .banner
+    {
+        height: 569px;
+
+        &::after
+        {
+            height: 569px;
+        }
+
+        &__text
+        {
+            font-size: 85px;
+            padding: 0 40px 25px 0;
+
+            &::after
+            {
+                content: "_";
+                color: $color_pink;
+            }
         }
     }
 }
