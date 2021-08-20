@@ -1,74 +1,160 @@
 .header
 {
-    height: 232px;
     width: 100%;
-    
-    &-color 
-    {
-        height: 176px;
-        width: 100%;
-        background-color: $color_pink;
-        border: 1px solid transparent;
-    }
+    height: 117px;
+    background-color: $color_pink;
+    border-top: 1px solid transparent;
+    position: relative;
 
     &__logo
     {
         display: block;
-        height: 51px;
-        width: 247px;
+        height: 28px;
+        width: 138px;
         opacity: 0.68;
-        margin: 32.35px auto 14px;
+        margin: 25px auto 10px 14px;
     }
 
     &__tittle
     {
         text-transform: lowercase;
-        text-align: center;
-        font-size: 1.4rem;
+        text-align: left;
+        font-size: 20px;
         font-family: 'Montserrat', sans-serif;
         font-weight: 200;
         text-shadow: 0px 3px 6px #00000029;
-        letter-spacing: 3.36px;
-        margin-bottom: 29px;
+        letter-spacing: 2.4px;
+        margin: 0 auto 20px 14px;
+    }
+
+    &__bold
+    {
+        font-weight: 400;
     }
 
     &-white
     {
-        height: 56px;
-        width: 100%;
-        background-color: $color_white;
+        display: none;
     }
 
-    &__nav__ul
+    &__style
     {
-        display: flex;
-        height: 56px;
-        justify-content: center;
-        align-items: center;
+        height: 1px;
+        width: 40px;
+        background-color: $color_white;
+        position: absolute;
+        top: 56px;
+        right: 12px;
 
-        &__li
+        &::before
         {
-            display: flex;
-            height: 56px;
-            align-items: center;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.15rem;
-            font-weight: 200;
-            letter-spacing: 2.3px;
-            text-transform: lowercase;
-            text-align: center;
-            padding: 0 1em;
+            content: "";
+            height: 2px;
+            width: 40px;
+            background-color: $color_white;
+            position: absolute;
+            bottom: 15px;
         }
 
-        &__li:hover
+        &::after
         {
-            background-color: $color_pink;
-            color: $color_white;
-            font-weight: 500;
+            content: "";
+            height: 2px;
+            width: 40px;
+            background-color: $color_white;
+            position: absolute;
+            top: 15px;
         }
     }
 }
-.bold
+
+@media (min-width: 380px)
 {
-    font-weight: 400;
+    .header__style
+    {
+        width: 52px;
+        right: 17px;
+
+        &::before
+        {
+            width: 52px;
+        }
+
+        &::after
+        {
+            width: 52px;
+        }
+    }
+}
+
+@media (min-width: 1010px)
+{
+    .header
+    {
+        height: 232px;
+    
+        &-color 
+        {
+            height: 176px;
+            width: 100%;
+            background-color: $color_pink;
+            border: 1px solid transparent;
+        }
+
+        &__logo
+        {
+            height: 51px;
+            width: 247px;
+            margin: 32.35px auto 14px;
+        }
+
+        &__tittle
+        {
+            text-align: center;
+            font-size: 1.4rem;
+            margin-bottom: 29px;
+        }
+
+        &__style
+        {
+            display: none;
+        }
+
+        &-white
+        {
+            display: block;
+            height: 56px;
+            width: 100%;
+            background-color: $color_white;
+        }
+
+        &__nav__ul
+        {
+            display: flex;
+            height: 56px;
+            justify-content: center;
+            align-items: center;
+
+            &__li
+            {
+                display: flex;
+                height: 56px;
+                align-items: center;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1.15rem;
+                font-weight: 200;
+                letter-spacing: 2.3px;
+                text-transform: lowercase;
+                text-align: center;
+                padding: 0 1em;
+            }
+
+            &__li:hover
+            {
+                background-color: $color_pink;
+                color: $color_white;
+                font-weight: 500;
+            }
+        }
+    }
 }
