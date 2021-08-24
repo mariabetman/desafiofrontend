@@ -1,12 +1,12 @@
 .banner
 {
+    display: flex;
     height: 641px;
     width: 100%;
     position: relative;
-    background-image: url(../../Imagens/background_sdc.jpg);
+    background-image: url(../../Imagens/background_sdc_full.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position-x: right;
 
     &::after
     {
@@ -23,12 +23,13 @@
 
     &__position
     {
-        display: inline-block;
-        position: absolute;
-        bottom: 0;
-        right: 2.5px;
-        margin: auto;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
         z-index: 1;
+        padding-bottom: 15px;
     }
 
     &__text
@@ -36,16 +37,20 @@
         display: inline-block;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
-        font-size: 7.5vw;
+        font-size: 7vw;
         color: $color_white;
         letter-spacing: 0;
-        padding: 0 40px 25px 0;
 
         &::after
         {
             content: "_";
             color: $color_pink;
         }
+    }
+
+    &__text:nth-child(1), &__text:nth-child(2)
+    {
+        margin-right: 30px;
     }
 }
 
@@ -60,10 +65,16 @@
             height: 569px;
         }
 
+        &__position
+        {
+            justify-content: flex-end;
+            margin-right: 50px;
+        }
+
         &__text
         {
             font-size: 85px;
-            padding: 0 40px 25px 0;
+        
 
             &::after
             {
